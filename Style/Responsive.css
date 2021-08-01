@@ -1,3 +1,33 @@
+@media screen and (max-width: 1200px) {
+  
+
+ 
+
+    .InfoPopup .container .TituloFilme{
+
+    
+    
+        
+        font-size: 25px;
+       
+    }
+
+    .InfoFilme{
+
+        font-size: 15px;;
+    
+    }
+    
+ 
+
+
+
+}
+
+
+
+
+
 @media screen and (max-width: 1000px) {
   
 
@@ -14,6 +44,21 @@
         
         font-size: 60px;
         
+    }
+
+    .InfoPopup .container .TituloFilme{
+
+    
+    
+        
+        font-size: 20px;
+       
+    }
+
+    .InfoFilme{
+
+        font-size: 15px;;
+    
     }
 
  
@@ -81,61 +126,26 @@
     
     }
 
+    .PopUpBox{
 
-
-}
-
-
-@media screen and (max-width: 768px) {
-
-
-
-    .container{
-
-        margin-left: 12%;
-        margin-right: 12%;
-    }    
-
-    .MenuCabecalho{
-      
+        width: 100vw;
+        height: 100vh;
         
-        font-size: 12px;
-
-
+       
     }
 
-    * img { 
-        width: 15rem; 
-        height: auto;
-        margin-left: 1%;  
-        margin-bottom: 3.5%;
-    } /* Configura todas as imagens do documento a 3rem */
-    header.LogoNetflix img{
+    .InfoPopup .container .TituloFilme{
 
-        width: 15rem;
-        height: auto;
     
-    }
-
-    .CartazPromocional{
-
-        font-size: 14px;
-        
-        
-    }
     
-
-
-    .CartazPromocional .TituloFilme{
         
-        font-size: 32px;
-        
+        font-size: 20px;
+       
     }
 
-    .CartazPromocional .PainelBtnCartaz .CartazBTN{
+    .InfoFilme{
 
-        width: 300px;
-        margin-top: 5px;
+        font-size: 10px;;
     
     }
 
@@ -143,7 +153,11 @@
 
 
 
+
 }
+
+
+
 
 @media screen and (max-width: 500px) {
 
@@ -196,6 +210,22 @@
         margin-top: 5px;
     
     }
+
+    .InfoPopup .container .TituloFilme{
+
+    
+    
+        
+        font-size: 15px;
+       
+    }
+
+    .InfoFilme{
+
+        font-size: 8px;;
+    
+    }
+    
 
  
     
@@ -256,8 +286,35 @@
     
     }
 
- 
+    .InfoPopup .container .TituloFilme{
+
     
+    
+        
+        font-size: 15px;
+       
+    }
+
+    .InfoFilme{
+
+        font-size: 7px;;
+    
+    }
+
+    .InfoPopup{
+
+       
+        width: 35%;
+        min-width: 200px;
+        padding: 25px;
+  
+        
+     }
+
+     
+
+
+     
 
 
 }
