@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Aparencia principal CSS-->
+    <link rel="stylesheet" href="Style/MainStyle.css">
+    <!-- Link Responsividade CSS-->
+    <link rel="stylesheet" href="Style/Responsive.css">
+    <!-- Thumbnail do site-->
+    <link rel="icon" type="imagem/png" href="Resourses/NetflixThumb.png" />
+    
+    <!-- Link do Owl Carousel CSS-->
+    <link rel="stylesheet" href="Style/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="Style/Owl/owl.theme.default.min.css">
+
+    <title>Netflix</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="container">
+           <!-- 
+               
+           -->
+           <img src="Resourses/LogoNetflix.png" class="LogoNetflix" alt="LogoNetflix">
+           
+           
+
+            <nav class="MenuCabecalho">
+
+                <a href="#">Inicio</a>
+                <a href="#">Series</a>
+                <a href="#">Filmes</a>
+                <a href="#">Mais recentes</a>
+                <a href="#">Minha lista</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+       
+        <div class="CartazPromocional">
+
+           <div class="container">
+            
+               <h3 class="TituloFilme">Uma Batalha de Fé</h3>
+            
+               <p class="Descricao">Hunter Wilde é o líder de um grupo de sobreviventes cristãos que está tentando viver o mais normal possível dois anos após um ataque eletromagnético que mudou os rumos da civilização. Em um mundo de caos, viver o dia a dia se tornou muito traiçoeiro, mas isso não é nada comparado a quando os portões do inferno são abertos e demônios surgem determinados a procurar e destruir os cristãos restantes na Terra, e Hunter está marcado por eles. Se as forças malignas puderem quebrá-lo, toda a cidade o seguirá e o mal vencerá.</p>
+           
+               <div class="PainelBtnCartaz">
+
+                    <button class="CartazBTN" onclick="AssistirFilme()" >
+    
+                        <i class="fas fa-play"></i>
+                        Assistir
+    
+                   </button>
+    
+                   <button class="CartazBTN" onclick="InformacoesFilme()" >
+                   
+                        <i class="fas fa-info-circle"></i>
+                         Mais informações
+    
+                   </button>
+    
+               </div>
+        
+            </div>
+
+        
+           
+        </div>
+
+    </main>
+
+    <div class="CarroselFilmes">
+
+        <div class="owl-carousel owl-theme">
+            
+            <div class="item"> <button class="FilmeBTN" onclick="EscolherFilme('UmaBatalhaDeFe')"> <img src="Resourses/BannerUBF.jpg" class="BoxFilmes" alt=""></button> </div>
+            <div class="item"> <button class="FilmeBTN" onclick="EscolherFilme('Loki')"> <img src="Resourses/BannerLoki.jpg" class="BoxFilmes" alt=""></button> </div>
+            <div class="item"> <button class="FilmeBTN" onclick="EscolherFilme('ViuvaNegra')"> <img src="Resourses/ViuvaNegraPoster.jpg" class="BoxFilmes" alt=""></button> </div>
+            <div class="item"> <button class="FilmeBTN" onclick="EscolherFilme('Monstros')"> <img src="Resourses/BannerMonstros.jpg" class="BoxFilmes" alt=""></button> </div>
+            <div class="item"> <button class="FilmeBTN" onclick="EscolherFilme('ICarly')"> <img src="Resourses/ICarlyBanner.jpg" class="BoxFilmes" alt=""></button> </div>
+            <div class="item"> <button class="FilmeBTN" onclick="EscolherFilme('UmaNoiteDeTerror')"> <img src="Resourses/UmaNoiteDeTerrorBanner.jpg" class="BoxFilmes" alt=""></button> </div>
+            <div class="item"> <button class="FilmeBTN" onclick="EscolherFilme('SpaceJam')"> <img src="Resourses/SpaceJamBanner.jpg" class="BoxFilmes" alt=""></button> </div>
+ 
+        </div>
+
+    </div>
+
+    <!-- Link dos icones externos do FontAwesome CSS-->
+    <script src="https://kit.fontawesome.com/32f3fe3943.js" crossorigin="anonymous"></script>
+     <!-- Link JQuery do Owl Carousel CSS-->
+     <script src="js/Owl/jquery.min.js" ></script>
+     <script src="js/Owl/owl.carousel.min.js" ></script>
+     <script src="js/Owl/SetupCarousel.js" ></script>
+
+     <script src="js/Configurations.js"></script>
+     
+    <footer>
+        <nav class="Rodape">
+           
+            Contatos:
+       
+        <ol class="ListaDeContatos">
+
+
+            
+ 
+            <br> <!-- Pular linhas-->
+
+            <li>
+          
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/leonardodesigner3d/"target="_blank" class="Link">LeonardoDesigner</a>
+    
+            </li>
+ 
+            <br> <!-- Pular linhas-->
+
+            <li>
+          
+               <i class="fas fa-envelope-square"></i>
+               <a href="mailto:leonardodesigner3d@outlook.com"target="_blank" class="Link">leonardodesigner3d@outlook.com</a>
+   
+            </li>
+
+            <br> <!-- Pular linhas-->
+
+           
+        </ol>
+        
+       </footer>
+
+        </nav>
+
+    </footer>
+    
+    <div class="PopUpBox">
+
+       <div class="InfoPopup">
+
+           <button class="FecharPopUp" onclick="FecharPopUp()">
+            <i class="fas fa-times-circle"></i>
+           </button>
+
+            <div class="container">
+
+                <div class="BarraTitulo">
+
+                    <h3 class="TituloFilme">Uma Batalha de Fé</h3>
+                    
+                </div>
+    
+
+                <br> <!-- Pular linhas-->
+
+                <ol class="InfoFilme">
+                    <li>
+                        <div class="BlocoInfo">Nota: <p class="Nota">1</p> / 100; </div>
+                        
+                     </li>
+        
+                     <br> <!-- Pular linhas-->
+
+                     <li>
+                       
+                        <div class="BlocoInfo">Gênero: <p class="Genero"> </p> </div>
+                     </li>
+
+                     <br> <!-- Pular linhas-->
+        
+                     
+                     <li>
+                        
+                        <div class="BlocoInfo">Classificação: <p class="Classificacao"></p></div>
+                     </li>
+
+                     <br> <!-- Pular linhas-->
+
+                     
+                     <li>
+                      
+                        <div class="BlocoInfo">Produtor: <p class="Produtor"> </p> </div>
+                     </li>
+
+                     <br> <!-- Pular linhas-->
+
+                     <li>
+                       
+                        <div class="BlocoInfo">Diretor(es): <p class="Diretor"> </p> </div>
+                       
+                     </li>
+
+                     <br> <!-- Pular linhas-->
+        
+                     
+                     <li>
+                       
+                        <div class="BlocoInfo">Escritor(es): <p class="Escritor"> </p> </div>
+                     </li>
+
+                     <br> <!-- Pular linhas-->
+
+                     <li>
+                       
+                        <div class="BlocoInfo">Lançamento: <p class="Lancamento"> </p> </div>
+                       
+                     </li>
+        
+                 </ol>
+    
+            </div>
+            
+       </div>
+
+       
+
+    </div>
+
+</body>
+</html>
+
